@@ -1,0 +1,22 @@
+{
+  "name": "claims-server",
+  "version": "1.0.0",
+  "description": "claims web apis",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterchege/claims-server.git"
+  },
+  "author": "apa insurance",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterchege/claims-server/issues"
+  },
+  "homepage": "https://github.com/peterchege/claims-server#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
