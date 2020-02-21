@@ -61,7 +61,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       
-      - sonarcloud/scan
+      # - sonarcloud/scan
           
   
 workflows:
