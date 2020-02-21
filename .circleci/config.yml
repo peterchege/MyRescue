@@ -3,6 +3,8 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+orbs:
+  sonarcloud: sonarsource/sonarcloud@1.0.1
 jobs:
   build:
     docker:
@@ -32,6 +34,8 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+          
+      - sonarcloud/scan
 
       # run tests!
       - run: yarn test
